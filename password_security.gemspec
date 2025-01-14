@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "A gem to validate password strength in ActiveRecord models."
   spec.description = "This gem provides a method to validate the strength of passwords in ActiveRecord models, ensuring
                       they meet certain complexity requirements."
-  spec.homepage = "https://github.com/Kejoss/password_security.git"
+  spec.homepage = "https://rubygems.org/gems/password_security"
   spec.required_ruby_version = ">= 3.3.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
