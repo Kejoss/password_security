@@ -1,0 +1,4 @@
+en:
+  errors:
+    messages:
+      password_strength: "must be at least 14 characters long and contain at least one letter, one number, and one special character (@$!%*?&)"

@@ -1,0 +1,4 @@
+es:
+  errors:
+    messages:
+      password_strength: "debe tener 14 caracteres mínimo y contener al menos una letra, un número y un carácter especial (@$!%*?&)"

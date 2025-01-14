@@ -6,6 +6,8 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (7.2.2.1)
+      activesupport (= 7.2.2.1)
     activesupport (7.2.2.1)
       base64
       benchmark (>= 0.3)
@@ -78,7 +80,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activemodel
   activesupport (~> 7.0)
+  i18n
   password_security!
   rake (~> 13.0)
   rspec (~> 3.0)

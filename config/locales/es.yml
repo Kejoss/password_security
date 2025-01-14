@@ -1,4 +1,0 @@
-es:
-  errors:
-    messages:
-      password_strength: "does not meet the security requirements"

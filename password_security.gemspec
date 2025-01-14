@@ -9,9 +9,10 @@ Gem::Specification.new do |spec|
   spec.email = ["kevinanderson22082001@gmail.com"]
 
   spec.summary = "A gem to validate password strength in ActiveRecord models."
-  spec.description = "This gem provides a method to validate the strength of passwords in ActiveRecord models, ensuring they meet certain complexity requirements."
+  spec.description = "This gem provides a method to validate the strength of passwords in ActiveRecord models, ensuring
+                      they meet certain complexity requirements."
   spec.homepage = "https://github.com/Kejoss/password_security.git"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 3.3.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 

@@ -1,13 +1,24 @@
+# frozen_string_literal: true
+
+# lib/password_security/model_extension.rb
 module PasswordSecurity
+  # ModelExtension
   module ModelExtension
-    def validates_password_strength(field_name)
-      validate do
-        password = send(field_name)
+    def self.included(base)
+      base.extend(ClassMethods)
+    end
 
-        next if password.blank?
+    # ClassMethods
+    module ClassMethods
+      def validates_password_strength(field_name)
+        validate do
+          password = send(field_name)
 
-        unless password.length >= 14 && password =~ /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])/
-          errors.add(field_name, I18n.t("activerecord.errors.messages.password_complexity"))
+          next if password.blank?
+
+          unless password.length >= 14 && password =~ /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])/
+            errors.add field_name, I18n.t("errors.messages.password_strength")
+          end
         end
       end
     end
